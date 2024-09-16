@@ -31,3 +31,20 @@ RECEIVE payment from customer
 COMMIT TRANSACTION
 
 ## Support for the Sales Departments' Report
+Improvement for Database Design to Track Instalment Payments:
+
+A new table could be introduced to track partial payments. This table could store the orderNumber, paymentAmount, paymentDate, and balance. Each time a payment is made, a new record is inserted. This allows the sales department to query orders with unpaid balances by checking if the total payment amount is less than the order total.
+
+Example table schema for payment_details:
+   sql
+   CREATE TABLE payment_details (
+       paymentID INT AUTO_INCREMENT PRIMARY KEY,
+       orderNumber INT,
+       paymentAmount DECIMAL(10, 2),
+       paymentDate DATE,
+       balance DECIMAL(10, 2),
+       FOREIGN KEY (orderNumber) REFERENCES orders(orderNumber)
+   );
+   
+
+This schema would allow the sales department to easily generate a report of orders that have not been fully paid by querying for orders where the balance is greater than zero.
