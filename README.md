@@ -4,10 +4,12 @@
 
 | **Key**                                                               | Value                                                                                                                                                                              |
 |---------------|---------------------------------------------------------|
-| **Group Name**                                                               | ? |
-| **Semester Duration**                                                 | 19<sup>th</sup> August - 25<sup>th</sup> November 2024                                                                                                                       |
+| **Group Name**                                                               | Group B7 |
+| **Semester Duration**                                                 | 19<sup>th</sup> August - 25<sup>th</sup> November 2024                                                                                                                       |![WhatsApp Image 2024-09-17 at 10 43 57](https://github.com/user-attachments/assets/bf97cb8f-d719-46a8-abc5-51b992575282)
+
 
 ## Flowchart
+Image attached
 
 ## Pseudocode
 START TRANSACTION
